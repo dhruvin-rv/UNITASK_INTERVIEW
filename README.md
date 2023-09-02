@@ -87,4 +87,4 @@ $ npm run start:prod
 
 ## Swagger Documentation
 
-- Navigate to http://localhost:port/api/doc for the swagger collection
+- Navigate to http://localhost:3000/api/doc for the swagger collection
