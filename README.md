@@ -11,6 +11,7 @@ This is interview project developed for UNITASK TECHNOLOGIES PVT LTD by dhruvin 
 - [Validation](#validation)
 - [Installation](#Installation)
 - [Running the app](#Running-the-app)
+- [Swagger](#Swagger-Documentation)
 
 ## Description
 
@@ -83,3 +84,7 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
+
+## Swagger Documentation
+
+- Navigate to http://localhost:port/api/doc for the swagger collection

@@ -6,6 +6,7 @@ import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.useGlobalInterceptors(new ResponseInterceptor());
+  app.setGlobalPrefix('api');
   const config = new DocumentBuilder()
     .setTitle('Random joke generator')
     .setDescription('Interview project for random joke generator apis')
@@ -13,7 +14,7 @@ async function bootstrap() {
     .addBearerAuth()
     .build();
   const document = SwaggerModule.createDocument(app, config);
-  SwaggerModule.setup('api', app, document);
+  SwaggerModule.setup('api/doc', app, document);
   await app.listen(3000);
 }
 bootstrap();
