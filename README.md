@@ -6,13 +6,10 @@ This is interview project developed for UNITASK TECHNOLOGIES PVT LTD by dhruvin 
 
 - [Description](#description)
 - [Features](#features)
-- [Framework](#framework)
+- [Framework](#Stacks)
 - [API Endpoints](#api-endpoints)
 - [Validation](#validation)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [Getting Started](#Installation)
 
 ## Description
 
