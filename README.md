@@ -1,30 +1,71 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Random Joke Generator
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+This is interview project developed for UNITASK TECHNOLOGIES PVT LTD by dhruvin vaghasiya this project includes backend features like SignUp, SignIn, SignOut, GetRandomJoke, GetProfile
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Table of Contents
+
+- [Description](#description)
+- [Features](#features)
+- [Framework](#framework)
+- [API Endpoints](#api-endpoints)
+- [Validation](#validation)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+This project is a web-based platform that empowers users to create and manage their profiles, providing a personalized experience. Users can register for an account, log in securely, and access a variety of features. One of the notable features of this platform is the ability to access a collection of random jokes for free, enhancing the user experience with humor and entertainment.
+
+## Features
+
+`User Profile Creation`: Users can easily create their profiles by providing essential information, ensuring a personalized experience on the platform.
+
+`Secure User Authentication`: The platform prioritizes security with robust user authentication. Users can securely log in to their accounts, safeguarding their personal data.
+
+`Random Jokes`: Registered users have the privilege to access random jokes for free. It adds a touch of humor and entertainment to their experience.
+
+`Logout`: Users can log out of their accounts at any time, ensuring the security of their sessions and data.
+
+`Get Profile`: Users can view their profiles.
+
+## Stacks
+
+`Framework`: NestJS - A scalable and extensible Node.js framework.
+
+`Validation`: Class Validator and Class Transformer for robust input data validation and sanitization.
+
+`API Documentation`: Swagger for API documentation.
+
+`Database`: MongoDB for data storage.
+
+`Security`: JWT for token-based authentication, and Bcrypt for password hashing.
+
+`Encryption`: Crypto for encryption and decryption of sensitive data.
+
+## API Endpoints
+
+| Endpoint                | Method | Description           |
+| ----------------------- | ------ | --------------------- |
+| `/api/`                 | GET    | Home page.            |
+| `/api/users`            | POST   | Sign up a new user.   |
+| `/api/me`               | GET    | Get the user profile. |
+| `/api/auth/login`       | POST   | Log in a user.        |
+| `/api/auth/logout`      | POST   | Log out a user.       |
+| `/api/joke/random-joke` | GET    | Get a random joke.    |
+
+## Validation
+
+**Request Validation:**
+
+API endpoints adhere to strict input validation rules. Only fields specified in the Swagger documentation schema are accepted, and any additional fields or missing required fields will result in an error response from the backend.
+
+- **Swagger Schema:** The Swagger documentation provides a clear specification of the expected request structure for each API endpoint. Please refer to the Swagger documentation for details on the required fields and their data types.
+
+- **Validation Errors:** If a request contains extra fields that are not specified in the Swagger schema, the backend will respond with an error indicating that the request is invalid. Similarly, if any required fields are missing, the backend will also respond with a validation error.
+
+It's essential to ensure that your requests align with the Swagger documentation to ensure smooth interactions with our API endpoints.
 
 ## Installation
 
@@ -44,30 +85,3 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
