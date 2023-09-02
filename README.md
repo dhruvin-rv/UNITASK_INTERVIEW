@@ -10,7 +10,7 @@ This is interview project developed for UNITASK TECHNOLOGIES PVT LTD by dhruvin 
 - [API Endpoints](#api-endpoints)
 - [Validation](#validation)
 - [Installation](#Installation)
-- [Running the app](#Running the app)
+- [Running the app](#Running-the-app)
 
 ## Description
 
